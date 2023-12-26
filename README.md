@@ -58,11 +58,11 @@ Here's why Tripadvisor is the perfect *hunting ground* for Hotels and Restaurant
 
 Ready to skyrocket your customer base? Let's get started! 💼🌍
 
-## 🎥 Video Demo
+<!-- ## 🎥 Video Demo
 
 Watch this video to see the scraper in action!
 
-[![Tripadvisor Scraper Video Demo](https://raw.githubusercontent.com/omkarcloud/tripadvisor-scraper/master/images/youtube-video.png)](https://www.youtube.com/watch?v=RwCWcaKBahI)
+[![Tripadvisor Scraper Video Demo](https://raw.githubusercontent.com/omkarcloud/tripadvisor-scraper/master/images/youtube-video.png)](https://www.youtube.com/watch?v=RwCWcaKBahI) -->
 
 ## 🚀 Getting Started
 
@@ -182,7 +182,7 @@ python main.py
 The first 50 requests are free. After that, you can upgrade to the Pro Plan, which will get you 30,000 listings (1000 requests * 30) for just $9.
 
 
-### Tripadvisor also offers a Content API. How are you better than them?
+### ❓ Tripadvisor also offers a Content API. How are you better than them?
 
 - Most importantly, because Tripadvisor's Content API is very expensive. For example, if you want to scrape 30 hotels, you need to request for each location separately. Each request costs $0.01, and querying just 30 locations will cost you $0.30. While in our API, you just need to make 1 request and you will get 30 hotels for $0.009 only, which is 33x cheaper compared to Tripadvisor's Content API.
 
@@ -194,7 +194,7 @@ The first 50 requests are free. After that, you can upgrade to the Pro Plan, whi
 
 - Thanks to parallelization and caching, our APIs run super fast, like F-35 ⚡.
 
-### How did you build it?
+### ❓ How did you build it?
 
 We used Botasaurus Framework, Botasaurus is an All-in-One Web Scraping Framework with Anti-Detection, Parallelization, Asynchronous, and Caching Superpowers.
 
