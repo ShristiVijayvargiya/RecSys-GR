@@ -114,3 +114,5 @@ DATA.MD
 
 create_cache.py
 gpt/
+
+error_logs/
