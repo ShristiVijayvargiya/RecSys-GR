@@ -73,7 +73,9 @@ def do_request(data, retry_count=3):
             "error": None
         }
     else:
+
         message = response_data.get("message", "")
+        
         if "exceeded the MONTHLY quota" in message:
             return  {
                         "data":  None,
@@ -89,6 +91,7 @@ def do_request(data, retry_count=3):
                     }
 
         print(f"Error: {response.status_code}", response_data)
+        
         return  {
                         "data":  None,
                         "error":FAILED_DUE_TO_UNKNOWN_ERROR, 
@@ -112,9 +115,9 @@ def search(_, data, metadata):
     initial_results = cl.select(result, 'data', 'results', default=[])
     
     
-        
-    more_results = cl.select(result, 'data', 'results', default=[])
-    print(f"Got {len(more_results)} more results")
+    if not cl.select(result, 'error'):
+        more_results = cl.select(result, 'data', 'results', default=[])
+        print(f"Got {len(more_results)} more results")
 
     while cl.select(result, 'data', 'next') and (max_items is None or len(initial_results) < max_items):
         next = cl.select(result, 'data', 'next')
@@ -128,12 +131,12 @@ def search(_, data, metadata):
         print(f"Got {len(more_results)} more results")
         initial_results.extend(more_results)
 
-    if max_items is not None:
-        initial_results = initial_results[:max_items]
-
-    result['data']['results'] = initial_results
 
     if cl.select(result, 'error'):
         return DontCache(result)
+    else: 
+        if max_items is not None:
+            initial_results = initial_results[:max_items]
 
-    return result
+        result['data']['results'] = initial_results
+        return result

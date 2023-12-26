@@ -82,7 +82,7 @@ python main.py
 
 Find your Tripadvisor Leads in the `output` directory.
 
-![Tripadvisor Scraper CSV Result](https://raw.githubusercontent.com/omkarcloud/tripadvisor-scraper/master/images/tripadvisor-scraper-csv-result.png) #TODO
+![Tripadvisor Scraper CSV Result](https://raw.githubusercontent.com/omkarcloud/tripadvisor-scraper/master/images/tripadvisor-scraper-csv-result.png)
 
 *Note: If you don't have Python installed. Follow this Simple FAQ [here](https://github.com/omkarcloud/tripadvisor-scraper/blob/master/advanced.md#-i-dont-have-python-installed-how-can-i-run-the-scraper) and you will have your Tripadvisor Leads in next 5 Minutes*
 
@@ -163,11 +163,11 @@ To scrape additional locations, follow these steps to use our Tripadvisor API wi
 
 2. Then, subscribe to our Free Plan by visiting [this link](https://rapidapi.com/Chetan11dev/api/tripadvisor-scraper/pricing).
 
-![Subscribe to Free Plan](https://raw.githubusercontent.com/omkarcloud/tripadvisor-scraper/master/images/tripadvisor-free-subscription.png) # TODO update
+![Subscribe to Free Plan](https://raw.githubusercontent.com/omkarcloud/tripadvisor-scraper/master/images/tripadvisor-free-subscription.png)
 
 3. Now, copy the API key.
 
-![Copy the API Key](https://raw.githubusercontent.com/omkarcloud/tripadvisor-scraper/master/images/tripadvisor-api-key.png) # TODO update
+![Copy the API Key](https://raw.githubusercontent.com/omkarcloud/tripadvisor-scraper/master/images/tripadvisor-api-key.png) 
 
 4. Use it in the scraper as follows:
 ```python
