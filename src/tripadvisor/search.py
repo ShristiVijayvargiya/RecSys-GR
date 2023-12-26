@@ -1,3 +1,4 @@
+from botasaurus.decorator_helpers import measure_time
 
 from botasaurus import bt
 from botasaurus.cache import DontCache
@@ -31,7 +32,10 @@ def do_request(data, retry_count=3):
     # print("link", link)
     if retry_count == 0:
         print(f"Failed to get data, after 3 retries")
-        return DontCache(None)
+        return {
+                        "data":  None,
+                        "error":FAILED_DUE_TO_UNKNOWN_ERROR, 
+                    }
 
     
 
@@ -47,10 +51,10 @@ def do_request(data, retry_count=3):
         
         message = response_data.get("message", "")
         if "API doesn't exists" in message:
-            return DontCache({
+            return {
                         "data":  None,
                         "error":FAILED_DUE_TO_UNKNOWN_ERROR
-                    })
+                    }
 
         update_credits()
         # print(response_data)
@@ -71,27 +75,27 @@ def do_request(data, retry_count=3):
     else:
         message = response_data.get("message", "")
         if "exceeded the MONTHLY quota" in message:
-            return  DontCache({
+            return  {
                         "data":  None,
                         "error":FAILED_DUE_TO_CREDITS_EXHAUSTED
-                    })
+                    }
         elif "exceeded the rate limit per second for your plan" in message or "many requests" in message:
             sleep(2)
             return do_request(data, retry_count - 1)
         elif "You are not subscribed to this API." in message:
-            return DontCache({
+            return {
                         "data": None,
                         "error": FAILED_DUE_TO_NOT_SUBSCRIBED
-                    })
+                    }
 
         print(f"Error: {response.status_code}", response_data)
-        return  DontCache({
+        return  {
                         "data":  None,
                         "error":FAILED_DUE_TO_UNKNOWN_ERROR, 
-                    })
+                    }
 
 
-@request(**default_request_options,)
+@request(**default_request_options)
 def search(_, data, metadata):
     if not metadata.get('key'):
          return  DontCache({
@@ -128,5 +132,8 @@ def search(_, data, metadata):
         initial_results = initial_results[:max_items]
 
     result['data']['results'] = initial_results
+
+    if cl.select(result, 'error'):
+        return DontCache(result)
 
     return result

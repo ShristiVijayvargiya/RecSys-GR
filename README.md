@@ -148,7 +148,7 @@ To search for all hotels in your target location, remove the `max` parameter. Th
 
 ```python
 locations = [
-  "Detroit"
+  "Detroit",
 ]
 
 Tripadvisor.search(locations, type=Tripadvisor.HOTEL)

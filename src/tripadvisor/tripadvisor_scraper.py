@@ -54,7 +54,6 @@ class Tripadvisor:
 
     
     @staticmethod
-    @measure_time
     def search(location:  Union[str, List[str]], type:str, max: Optional[int] = None, key: Optional[str] =None,  use_cache: bool = True) -> Dict:
         """
         Function to scrape data from Tripadvisor.
@@ -84,11 +83,11 @@ class Tripadvisor:
 
                 result_item = data.get('results', [])
                 result.extend(result_item)
-                write_output(item['location'], result_item)
+                write_output(item['location'], result_item,type)
 
         if result:
             # bt.write_json(result, "result")
-            write_output('all',result, lambda x:x)
+            write_output('_all',result, type, lambda x:x)
         
         search.close()
 

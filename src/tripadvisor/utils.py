@@ -43,4 +43,5 @@ default_browser_options = {
 default_request_options = {
     "close_on_crash": True,  # When Ready for Production change to True
     'output': None, # When Ready for Production Uncomment
+    "raise_exception":True, 
 }
