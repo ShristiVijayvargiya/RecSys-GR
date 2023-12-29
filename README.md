@@ -192,7 +192,8 @@ The first 50 requests are free. After that, you can upgrade to the Pro Plan, whi
 
 - Additionally, compared to other APIs, we scrape multiple data points including email, phone number, website, ranking, reviews, ratings, featured images, and detailed address, etc., ensuring you have all the data you need.
 
-- Thanks to parallelization and caching, our APIs run super fast, like F-35 ⚡.
+<!-- - Thanks to parallelization and caching, our APIs run super fast, like F-35 ⚡. -->
+
 
 ### ❓ How did you build it?
 
