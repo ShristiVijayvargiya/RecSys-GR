@@ -32,7 +32,7 @@ def print_data_errors(credits_exhausted, not_subscribed, unknown_error, no_key):
 
     if not_subscribed:
         name = "locations" if len(not_subscribed) > 1 else "location"
-        print(f"Could not get data for {len(not_subscribed)} {name} as you are not subscribed to Tripadvisor Scraper API. Please subscribe to a free plan by visiting https://rapidapi.com/Chetan11dev/api/tripadvisor-scraper/pricing to scrape data.")
+        print(f"Could not get data for {len(not_subscribed)} {name} as you are not subscribed to Tripadvisor Scraper API. Please subscribe to a free plan by visiting https://rapidapi.com/Chetan11dev/api/tripadvisor-scraper/pricing")
 
     if unknown_error:
         name = "locations" if len(unknown_error) > 1 else "location"
@@ -40,7 +40,7 @@ def print_data_errors(credits_exhausted, not_subscribed, unknown_error, no_key):
 
     if no_key:
         name = "locations" if len(no_key) > 1 else "location"
-        print(f"Could not get data for {len(no_key)} {name} as you are not subscribed to Tripadvisor Scraper API. Please subscribe to a free plan by visiting https://rapidapi.com/Chetan11dev/api/tripadvisor-scraper/pricing to scrape data.")
+        print(f"Could not get data for {len(no_key)} {name} as you are not subscribed to Tripadvisor Scraper API. Please subscribe to a free plan by visiting https://rapidapi.com/Chetan11dev/api/tripadvisor-scraper/pricing")
 
       
 
