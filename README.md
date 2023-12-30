@@ -160,7 +160,7 @@ Tripadvisor.search(locations, type=Tripadvisor.HOTEL)
 To scrape additional locations, follow these steps to use our Tripadvisor API with the Free Plan. You can make 50 requests for free, allowing you to scrape 1500 (50 * 30) listings at no cost:
 1. Sign up on RapidAPI by visiting [this link](https://rapidapi.com/auth/sign-up).
 
-![Sign Up on RapidAPI](https://raw.githubusercontent.com/omkarcloud/google-maps-scraper/master/screenshots/sign-up.png)
+<!-- ![Sign Up on RapidAPI](https://raw.githubusercontent.com/omkarcloud/google-maps-scraper/master/screenshots/sign-up.png) -->
 
 2. Then, subscribe to our Free Plan by visiting [this link](https://rapidapi.com/Chetan11dev/api/tripadvisor-scraper/pricing).
 
