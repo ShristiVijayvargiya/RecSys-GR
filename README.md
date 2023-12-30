@@ -36,11 +36,12 @@
 ## 👉 Explore Our Other Awesome Products
 
 
-- ✅ [Botasaurus](https://github.com/omkarcloud/botasaurus): The All-in-One Web Scraping Framework with Anti-Detection, Parallelization, Asynchronous, and Caching Superpowers.
+- ✅ [BOTASAURUS](https://github.com/omkarcloud/botasaurus): The All-in-One Web Scraping Framework with Anti-Detection, Parallelization, Asynchronous, and Caching Superpowers.
 
-- ✅ [Google Maps Scraper](https://github.com/omkarcloud/google-maps-scraper): Find thousands of new customers personal phone, email, LinkedIn, Twitter and grow your business exponentially.
 
-- ✅ [Outlook Account Generator](https://github.com/omkarcloud/outlook-account-generator): Send emails at Google's Scale with Outlook Accounts.
+- ✅ [GOOGLE MAPS SCRAPER](https://github.com/omkarcloud/google-maps-scraper): Find thousands of new customers personal phone, email, LinkedIn, Twitter and grow your business exponentially.
+
+- ✅ [GOOGLE SCRAPER](https://github.com/omkarcloud/google-scraper): Discover Search Results from Google.
 
 ---
 
