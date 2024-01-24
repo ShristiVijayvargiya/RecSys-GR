@@ -2,7 +2,7 @@
 
 <div align="center" style="margin-top: 0;">
   <h1>✨ Tripadvisor Scraper 🚀</h1>
-  <p>💦 Discover websites, emails, and phone numbers of hotels and restaurants from the untapped gold mine of TripAdvisor leads. 💦</p>
+  <p>💦 Find websites, contact details, title, description of hotels and restaurants from TripAdvisor. 💦</p>
 </div>
 <em>
   <h5 align="center">(Programming Language - Python 3)</h5>
@@ -33,37 +33,24 @@
   
 ---
 
-## 👉 Explore Our Other Awesome Products
+## Disclaimer for Tripadvisor Scraper Project
 
+By using Tripadvisor Scraper, you agree to comply with all applicable local and international laws related to data scraping, copyright, and privacy. The developers of Tripadvisor Scraper will not be held liable for any misuse of this software. It is the user's sole responsibility to ensure adherence to all relevant laws regarding data scraping, copyright, and privacy, and to use Tripadvisor Scraper in an ethical and legal manner, in line with both local and international regulations.
+
+We take concerns related to the Tripadvisor Scraper Project very seriously. If you have any inquiries or issues, please contact Chetan Jain at [chetan@omkar.cloud](mailto:chetan@omkar.cloud). We will take prompt and necessary action in response to your emails.
+
+## 👉 Explore Our Other Awesome Products
 
 - ✅ [BOTASAURUS](https://github.com/omkarcloud/botasaurus): The All-in-One Web Scraping Framework with Anti-Detection, Parallelization, Asynchronous, and Caching Superpowers.
 
-
-- ✅ [GOOGLE MAPS SCRAPER](https://github.com/omkarcloud/google-maps-scraper): Find thousands of new customers personal phone, email, LinkedIn, Twitter and grow your business exponentially.
+- ✅ [GOOGLE MAPS SCRAPER](https://github.com/omkarcloud/google-maps-scraper): Discover Search Results from Google Maps.
 
 - ✅ [GOOGLE SCRAPER](https://github.com/omkarcloud/google-scraper): Discover Search Results from Google.
 
 ---
 
-⚡ Get 120+ Tripadvisor Leads in next 5 Minutes! ⚡
+Discover search results of hotels and restaurants from TripAdvisor.
 
-I am Tripadvisor Scraper, created to help you find hotel and restaurant leads leads and grow your sales.. 🚀
-
-*Why Scrape Tripadvisor?* 
-Here's why Tripadvisor is the perfect *hunting ground* for Hotels and Restaurants:
-- TripAdvisor leads are less frequently scraped than those from Google Maps, resulting in lower competition and higher conversion rates.
-- TripAdvisor exclusively focuses on hotels and restaurants, ensuring that you receive only the most relevant hotel and restaurant leads.
-- TripAdvisor provides direct access to potential clients' phone numbers, emails, and websites, significantly reducing the time it takes to close a deal.
-
-![Tripadvisor Scraper CSV Result](https://raw.githubusercontent.com/omkarcloud/tripadvisor-scraper/master/images/tripadvisor-scraper-csv-result.png)
-
-Ready to skyrocket your customer base? Let's get started! 💼🌍
-
-<!-- ## 🎥 Video Demo
-
-Watch this video to see the scraper in action!
-
-[![Tripadvisor Scraper Video Demo](https://raw.githubusercontent.com/omkarcloud/tripadvisor-scraper/master/images/youtube-video.png)](https://www.youtube.com/watch?v=RwCWcaKBahI) -->
 
 ## 🚀 Getting Started
 
@@ -81,11 +68,11 @@ python -m pip install -r requirements.txt
 python main.py
 ```
 
-Find your Tripadvisor Leads in the `output` directory.
+Find your Tripadvisor Data in the `output` directory.
 
 ![Tripadvisor Scraper CSV Result](https://raw.githubusercontent.com/omkarcloud/tripadvisor-scraper/master/images/tripadvisor-scraper-csv-result.png)
 
-*Note: If you don't have Python installed. Follow this Simple FAQ [here](https://github.com/omkarcloud/tripadvisor-scraper/blob/master/advanced.md#-i-dont-have-python-installed-how-can-i-run-the-scraper) and you will have your Tripadvisor Leads in next 5 Minutes*
+*Note: If you don't have Python installed. Follow this Simple FAQ [here](https://github.com/omkarcloud/tripadvisor-scraper/blob/master/advanced.md#-i-dont-have-python-installed-how-can-i-run-the-scraper) and you will have your Tripadvisor data in next 5 Minutes*
 
 ## 🤔 FAQs
 ### ❓ How to Scrape Hotels and Restaurants from Tripadvisor?
@@ -110,7 +97,7 @@ Tripadvisor.search(locations, type=Tripadvisor.HOTEL, max=100)
 python main.py
 ```
 
-Then find your Tripadvisor leads in the `output` directory.
+Then find your Tripadvisor data in the `output` directory.
 
 ![Tripadvisor Scraper CSV Result](https://raw.githubusercontent.com/omkarcloud/tripadvisor-scraper/master/images/tripadvisor-scraper-csv-result.png)
 
@@ -181,19 +168,6 @@ python main.py
 ```   
 
 The first 50 requests are free. After that, you can upgrade to the Pro Plan, which will get you 30,000 listings (1000 requests * 30) for just $9.
-
-
-### ❓ Tripadvisor also offers a Content API. How are you better than them?
-
-- Most importantly, because Tripadvisor's Content API is very expensive. For example, if you want to scrape 30 hotels, you need to request for each location separately. Each request costs $0.01, and querying just 30 locations will cost you $0.30. While in our API, you just need to make 1 request and you will get 30 hotels for $0.009 only, which is 33x cheaper compared to Tripadvisor's Content API.
-
-- Unlike TripAdvisor, which requires your credit card information even before you try their API, we're confident in the value of our service. Therefore, we offer a no-strings-attached free tier without the prerequisite of credit card details, allowing you to experience our API and recognize its benefits before buying it.
-
-- We are much simpler to use; just enter a city and you get 30 listings along with their email, phone, and website. While in Tripadvisor, you need to first search for a location, get their location IDs, and then for each location ask for data, leading to hard-to-write code, slower application, and more chances of request errors and bugs.
-
-- Additionally, compared to other APIs, we scrape multiple data points including email, phone number, website, ranking, reviews, ratings, featured images, and detailed address, etc., ensuring you have all the data you need.
-
-<!-- - Thanks to parallelization and caching, our APIs run super fast, like F-35 ⚡. -->
 
 
 ### ❓ How did you build it?
