@@ -45,7 +45,7 @@ We take concerns related to the Tripadvisor Scraper Project very seriously. If y
 
 - ✅ [GOOGLE MAPS SCRAPER](https://github.com/omkarcloud/google-maps-scraper): Discover Search Results from Google Maps.
 
-- ✅ [GOOGLE SCRAPER](https://github.com/omkarcloud/google-scraper): Discover Search Results from Google.
+<!-- - ✅ [GOOGLE SCRAPER](https://github.com/omkarcloud/google-scraper): Discover Search Results from Google. -->
 
 ---
 

@@ -1,4 +1,3 @@
-
 # Security Policy for the Tripadvisor Scraper Project
 
 ## Disclaimer
